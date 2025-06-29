@@ -34,7 +34,7 @@ Crop: ${data.name}
     <div className="p-4 max-w-lg mx-auto bg-white rounded shadow">
       <div className="h-80 overflow-y-auto mb-4 border p-2">
         {messages.map((msg, i) => (
-          <div key={i} className={\`mb-2 \${msg.sender === 'bot' ? 'text-left' : 'text-right'}\`}>
+          <div key={i} className={`mb-2 ${msg.sender === 'bot' ? 'text-left' : 'text-right'}`}>
             <span className={msg.sender === 'bot' ? 'bg-green-100 p-2 rounded' : 'bg-blue-100 p-2 rounded'}>
               {msg.text}
             </span>
